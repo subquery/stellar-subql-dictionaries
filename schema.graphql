@@ -1,0 +1,19 @@
+type Transaction @entity {
+  id: ID!
+  blockHeight: BigInt!
+  account: String!
+}
+
+type Operation @entity {
+  id: ID!
+  blockHeight: BigInt!
+  type: String!
+  sourceAccount: String!
+}
+
+type Effect @entity {
+  id: ID!
+  blockHeight: BigInt!
+  type: String!
+  account: String!
+}
